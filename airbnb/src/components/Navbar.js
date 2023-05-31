@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../assets/logo.jpg';
 import { GiWorld } from 'react-icons/gi';
 import { FiMenu, FiSearch } from 'react-icons/fi';
-import { BiUser } from 'react-icons/bi';
+import { BiUser, BiWorld } from 'react-icons/bi';
 
 
 const Navbar = () => {
@@ -32,11 +32,17 @@ const Navbar = () => {
         {/* Right */}
         <div className="flex  items-center
         pr-4 font-semibold text-gray-600">
-          <p>Rent Your Home</p>
-          <GiWorld className="mx-4" />
-          <div className="flex items-center border px-4 py-2 rounded-full gap-3">
-            <FiMenu className="text-[19px]" />
-            <BiUser className="text-[19px]" />
+          <p className="text-[17]">Rent Your Home</p>
+          <div className="flex items-center mx-8 gap-1">
+            <GiWorld className="" />
+            <div className="">EN</div>
+          </div>
+          
+
+          <div className="flex items-center border px-4 py-2 rounded-full gap-2 bg-[#ff5a60] text-white font-bold
+          shadow-lg shadow-gray-300 hover:bg-[#f9787c] duration-100 ease-out">
+            <p>Sign in</p>
+            <BiUser className="text-[22px]" />
           </div>
 
         </div>
